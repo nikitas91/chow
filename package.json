@@ -1,0 +1,35 @@
+{
+  "name": "chow",
+  "version": "1.0.0",
+  "description": "Chow Restaurant Finder App",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.10",
+    "mysql2": "^1.5.2",
+    "sequelize": "^4.34.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikitas91/chow.git"
+  },
+  "keywords": [
+    "chow"
+  ],
+  "author": "Nikita, Saymay, Devin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikitas91/chow/issues"
+  },
+  "homepage": "https://github.com/nikitas91/chow#readme"
+}
