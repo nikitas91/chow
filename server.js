@@ -21,7 +21,8 @@ app.set("view engine", "handlebars");
 
 app.use(express.static("public"));
 
-require("./routes/routes.js")(app);
+require("./routes/api-routes.js")(app);
+require("./routes/html-routes.js")(app);
 
 app.listen(PORT, function(){
 	console.log("server started on port " + PORT);
