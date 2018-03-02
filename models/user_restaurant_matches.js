@@ -48,3 +48,6 @@ module.exports = function(sequelize, DataTypes) {
     });
     return user_restaurant_matches;
 };
+
+
+// one user with many (hasmany) restaurant matches. 
