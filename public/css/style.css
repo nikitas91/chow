@@ -1,0 +1,54 @@
+.card-banner{
+    padding: 30px 0;
+}
+
+.banner-title{
+    font-size: 4.2rem !important;
+    line-height: 100% !important;
+    font-weight: bold !important;
+}
+
+.info-content{
+    padding: 30px 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.content{
+    vertical-align: top;
+}
+
+.content-image{
+    max-width: 275px;
+    max-height: 275px;
+}
+
+.image-left{
+    float: left;
+    margin-right: 20px;
+}
+
+.image-right{
+    float: right;
+    margin-left: 20px;
+}
+
+.content-title{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.content-body{
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.about-banner{
+    text-align: center;
+    margin-top: 20px;
+    padding: 50px;
+}
+
+.about-banner h2{
+    margin-top: 0;
+}
+
