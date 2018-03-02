@@ -1,22 +1,18 @@
-module.exports = function(sequelize, DataTypes) {
-    var food_category = sequelize.define("food_category", {
-        // Giving the user model a name of type STRING
+module.exports = function (sequelize, DataTypes) {
+    var FoodCategory = sequelize.define("FoodCategory", {
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
-            autoIncrement: true,
-            validate: {
-                len: [1, 10]
-            }
+            allowNull: false,
+            autoIncrement: true
         },
-        
         category_name: {
             type: DataTypes.STRING,
             validate: {
-                len: [1, 100]
+                len: [1, 255]
             }
         }
-    });
+    }, { underscored: true });
 
-    return food_category;
+    return FoodCategory;
 };
