@@ -12,7 +12,8 @@
     "express-handlebars": "^3.0.0",
     "method-override": "^2.3.10",
     "mysql2": "^1.5.2",
-    "sequelize": "^4.34.0"
+    "sequelize": "^4.34.0",
+    "yelp-fusion": "^2.0.3"
   },
   "devDependencies": {},
   "scripts": {
