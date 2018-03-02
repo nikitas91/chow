@@ -42,7 +42,7 @@ module.exports = function(sequelize, DataTypes) {
         
                 // This is the column name of the referenced model
                 key: 'id'     
-                    }
+                        }
                     }  
                     },  
 

@@ -32,19 +32,11 @@ module.exports = function(sequelize, DataTypes) {
             }
         },
 
-        matched_date: {
-            created_at: {
-                type: 'TIMESTAMP',
-                defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
-                allowNull: false
-              },
-              updated_at: {
-                type: 'TIMESTAMP',
-                defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
-                allowNull: false
-              }
-        },
-
+        matched_date: { 
+            
+            type: Sequelize.DATE, 
+            defaultValue: Sequelize.NOW 
+        }      
     });
     return user_restaurant_matches;
 };
