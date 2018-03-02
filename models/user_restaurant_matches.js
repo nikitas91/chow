@@ -36,8 +36,31 @@ module.exports = function(sequelize, DataTypes) {
             
             type: Sequelize.DATE, 
             defaultValue: Sequelize.NOW 
-        }      
+        },      
     });
+
+    user_restaurant_matches.associate = function(models) {
+        // We're saying that a food category should belong to a user. Multiple genres belong to one user.
+        // A food category can't be created without a user due to the foreign key constraint
+            user_restaurant_matches.belongsTo(models.users, {
+            foreignKey: {
+                allowNull: false,
+                user_id: {
+                    type: Sequelize.INTEGER,
+            
+                    references: {
+                    // This is a reference to another model
+                    model: users,
+            
+                    // This is the column name of the referenced model
+                    key: 'id'     
+                        }
+                    }  
+                },  
+    
+            }); 
+        };
+
     return user_restaurant_matches;
 };
 
