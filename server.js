@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const exphbs = require("express-handlebars");
 
 const app = express();
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 8080;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());

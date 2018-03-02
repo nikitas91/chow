@@ -1,13 +1,12 @@
-//require db
+const db = require("../models/index.js");
 const yelp = require("yelp-fusion");
 const keys = require("../keys.js");
 const client = yelp.client(keys.yelp.api_key);
 
-
 module.exports = function(app) {
 	//saves a new google user
 	app.post("/api/newuser", function(req, res){
-		
+
 	});
 
 	//return a list of all resturaunt categories
