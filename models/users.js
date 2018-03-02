@@ -1,10 +1,12 @@
 module.exports = function (sequelize, DataTypes) {
     var Users = sequelize.define("Users", {
         id: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
             primaryKey: true,
             allowNull: false,
-            autoIncrement: true
+            validate: {
+                len: [1, 255]
+            }
         },
         user_name: {
             type: DataTypes.STRING,
@@ -13,13 +15,7 @@ module.exports = function (sequelize, DataTypes) {
                 len: [1, 255]
             }
         },
-        first_name: {
-            type: DataTypes.STRING,
-            validate: {
-                len: [1, 255]
-            }
-        },
-        last_name: {
+        image_url: {
             type: DataTypes.STRING,
             validate: {
                 len: [1, 255]
