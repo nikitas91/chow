@@ -75,3 +75,39 @@ nav .nav-header{
     height: 50px;
     line-height: 50px;
 }
+
+.login-card-title{
+    background: #dd4b39;
+    padding: 10px;
+    text-align: center;
+}
+
+.valign-wrapper{
+    width: 100%;
+    min-height: calc(100vh - 64px);
+}
+
+.valign{
+    width: 100%;
+}
+
+
+/* Materialize Social */
+.icon-block {
+    padding: 0 15px;
+  }
+  .icon-block .material-icons {
+      font-size: inherit;
+  }
+
+  pre{
+    padding: 16px 20px 0px;
+      background: #eee;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+  }
+
+  .info{
+    font-size: 1.3rem;
+    text-align: center;
+  }
