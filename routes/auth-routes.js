@@ -5,8 +5,8 @@ module.exports = function (app) {
         res.render("login", { layout: false });
     });
     app.get("/auth/logout", function (req, res) {
-        // log out code
-        res.render("login", { layout: false });
+        req.logout();
+        res.redirect("/");
     });
     app.get("/auth/google",
         passport.authenticate("google", { scope: ["profile"] }));
