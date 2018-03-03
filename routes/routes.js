@@ -1,7 +1,6 @@
 const db = require("../models");
 const yelp = require("yelp-fusion");
-const keys = require("../config/keys");
-const client = yelp.client(keys.yelp.api_key);
+const client = yelp.client(process.env.YELP_API_KEY);
 
 const authCheck = function (req, res, next) {
 	if (!req.user) {
