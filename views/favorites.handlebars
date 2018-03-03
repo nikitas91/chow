@@ -1,0 +1,37 @@
+<div class="tabbed-container">
+    <div class="row">
+        <div class="col s12">
+            <div class="page-title">Favorites</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s6 offset-s3">
+            <select id="categorySelect" multiple>
+                <option value="" disabled selected>Choose your option</option>
+            </select>
+            <label>Add more favorites</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <div class="center-align">
+                <button id="addNewFavorite" class="btn waves-effect waves-light">Add</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <ul class="collection">
+                {{#each userFavorites}}
+                <li id="fav-{{id}}" class="collection-item avatar">
+                    <i class="material-icons circle">grade</i>
+                    <span class="title">{{FoodCategory.category_name}}</span>
+                    <p>You liked this category on
+                        <br>{{created_at}}</p>
+                    <button id="removeFavorite" data-id="{{id}}" class="btn waves-effect waves-light red secondary-content remove-fav">Remove</button>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>
