@@ -91,6 +91,49 @@ nav .nav-header{
     width: 100%;
 }
 
+.tabbed-container{
+    margin-top: 25px;
+}
+
+.page-title{
+    font-size: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.collection .title{
+    font-weight: bold;
+}
+
+.secondary-content{
+    top: 25px !important;
+}
+
+.tabs .indicator{
+    background-color: transparent !important;
+}
+
+.nav-content ul {
+    text-align: center;
+}
+.nav-content ul li {
+    display: inline;
+    float: none;
+}
+.nav-content ul li a {
+    display: inline-block;
+}
+
+.search-results img{
+    max-width: 225px !important;
+    max-height: 250px !important;
+    min-height: 225px !important;
+}
+
+.search-results .category-text{
+    border-right: 2px solid #e0e0e0;
+    padding: 0 10px;
+}
 
 /* Materialize Social */
 .icon-block {
@@ -100,14 +143,14 @@ nav .nav-header{
       font-size: inherit;
   }
 
-  pre{
+pre{
     padding: 16px 20px 0px;
-      background: #eee;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-  }
+    background: #eee;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
 
-  .info{
+.info{
     font-size: 1.3rem;
     text-align: center;
-  }
+}
