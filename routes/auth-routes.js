@@ -15,7 +15,6 @@ module.exports = function (app) {
         passport.authenticate("google"),
         function (req, res) {
             // Successful authentication, redirect home.
-            //res.redirect('/categories');
-            res.send(req.user);
+            res.redirect('/home');
         });
 };
