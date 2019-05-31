@@ -4,8 +4,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const db = require("./models");
 const passport = require("passport");
-const passportSetup = require("./config/auth");
 const cookieSession = require("cookie-session");
+require("./config/auth");
 
 let PORT = process.env.PORT || 3000;
 
